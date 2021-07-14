@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-14T06:07:20.619Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="a63Fu4sFpg7FDAf7Hnc7" version="14.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-14T09:58:58.266Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="M7vBnPlXNyV9tAOyVdT9" version="14.8.5" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="5044" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3385" dy="-262" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1964,6 +1964,9 @@
         <mxCell id="O9KLCyzz_sq7_ecukrvO-530" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-396" y="1550" width="40" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-43" target="FTWvnXMJPqgEjiOHBhAP-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FTWvnXMJPqgEjiOHBhAP-43" value="DownloaderService&lt;br&gt;triggerCheckingAndInstalling" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="5580" y="870" width="120" height="80" as="geometry" />
         </mxCell>
@@ -2339,6 +2342,238 @@
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="1850" y="3050" as="sourcePoint" />
             <mxPoint x="1405" y="3030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-57" target="FTWvnXMJPqgEjiOHBhAP-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-57" value="获取 activeTaskMap,&lt;br&gt;根据包名取出 task" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5580" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-59" target="FTWvnXMJPqgEjiOHBhAP-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-59" value="1. task.callbackCode = CODE_CALLBACK_OTHER&lt;br&gt;2.task.finished= 当前时间&lt;br&gt;3.对 apk 信息进行校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5450" y="1120" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-61" target="FTWvnXMJPqgEjiOHBhAP-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-61" value="&amp;nbsp;apkHash Md5 校验：目前不校验(由 Server 控制)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5477.5" y="1230" width="325" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-63" target="FTWvnXMJPqgEjiOHBhAP-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-63" target="FTWvnXMJPqgEjiOHBhAP-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-63" value="appInfo == null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5560" y="1320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-65" value="fileCheckResult =&amp;nbsp;APK_INFO_PARSE_FAILED" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5780" y="1330" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-67" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5720" y="1340" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-68" target="FTWvnXMJPqgEjiOHBhAP-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-68" target="FTWvnXMJPqgEjiOHBhAP-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-68" value="apk 包名 != task.pkgName" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5560" y="1440" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-70" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5640" y="1410" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-72" value="fileCheckResult =&amp;nbsp;PKG_NAME_CHECK_ERROR" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5320" y="1450" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-74" target="FTWvnXMJPqgEjiOHBhAP-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-74" target="FTWvnXMJPqgEjiOHBhAP-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-74" value="apk versionCode &amp;lt; task.versionCode" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5560" y="1560" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-76" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5520" y="1460" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-77" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5640" y="1530" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-78" value="这里有两种结果：&lt;br&gt;1. 正常的&lt;br&gt;fileCheckResult =VERSION_CODE_VERIFY_FAILED&lt;br&gt;2. task.versionCode 转换 Int 时抛出异常&amp;nbsp;&lt;br&gt;fileCheckResult =&amp;nbsp;FILE_CHECK_NUMBER_FORMAT_EXCEPTION_ERROR" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5780" y="1552" width="370" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-80" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5720" y="1580" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-81" value="fileCheckResult =&amp;nbsp;MD5_VERIFY_FAILED" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5260" y="1690" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-82" target="FTWvnXMJPqgEjiOHBhAP-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-82" target="FTWvnXMJPqgEjiOHBhAP-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-82" value="apkHashError == true" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5550" y="1680" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-84" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5630" y="1647" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-86" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5520" y="1699" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-87" target="FTWvnXMJPqgEjiOHBhAP-100">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5640" y="1930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-87" value="fileCheckResult =&amp;nbsp;FILE_CHECK_OK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5580" y="1800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-89" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5640" y="1770" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-91" target="FTWvnXMJPqgEjiOHBhAP-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-91" target="FTWvnXMJPqgEjiOHBhAP-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-91" value="fileCheckResult != FILE_CHECK_OK并且&lt;br&gt;fileCheckResult ==&amp;nbsp;MD5_VERIFY_FAILED" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5484.5" y="2150" width="310" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-93" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.517;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-65" target="FTWvnXMJPqgEjiOHBhAP-100">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5910" y="1560" as="sourcePoint" />
+            <mxPoint x="5633" y="1930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="6220" y="1360" />
+              <mxPoint x="6220" y="1930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-94" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-78" target="FTWvnXMJPqgEjiOHBhAP-100">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5910" y="1750" as="sourcePoint" />
+            <mxPoint x="5640" y="1930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="6190" y="1600" />
+              <mxPoint x="6190" y="1930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-95" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-72" target="FTWvnXMJPqgEjiOHBhAP-100">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5770" y="1740" as="sourcePoint" />
+            <mxPoint x="5640" y="1920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="5190" y="1480" />
+              <mxPoint x="5190" y="1920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-96" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-81">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5770" y="1740" as="sourcePoint" />
+            <mxPoint x="5579" y="1920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="5210" y="1720" />
+              <mxPoint x="5210" y="1920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-97" value="Apk 校验错误码汇总&lt;br&gt;MD5_VERIFY_FAILED&amp;nbsp; MD5 校验失败&lt;br&gt;APK_INFO_PARSE_FAILED&amp;nbsp; apk 信息校验失败，不是一个 apk 文件，或者不完整&lt;br&gt;PKG_NAME_CHECK_ERROR&amp;nbsp; 包名不匹配&lt;br&gt;VERSION_CODE_VERIFY_FAILED&amp;nbsp; VersionCode 不匹配&lt;br&gt;FILE_CHECK_NUMBER_FORMAT_EXCEPTION_ERROR&amp;nbsp; VersonCode 转换中出错" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="5860" y="1150" width="470" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-98" value="如果 task 的 appStatusCode ==CODE_APP_STATUS_RETRY_ONE&lt;br&gt;则重置为 0，也就是不再重试&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="5190" y="2177.5" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-100" target="FTWvnXMJPqgEjiOHBhAP-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-100" value="processMonitor.&lt;br&gt;onFileCheckFinished" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5580" y="1890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-103" target="FTWvnXMJPqgEjiOHBhAP-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-103" value="如果是 MD5_VERIFY_FAILED&lt;br&gt;上报 ：&lt;font color=&quot;#ff0000&quot;&gt;1770015：INSTALL_FAIL_FILE_CHECK_ERROR&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5580" y="1990" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-106" target="FTWvnXMJPqgEjiOHBhAP-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-106" value="如果 fileCheckResult&amp;nbsp; ==&amp;nbsp;APK_INFO_PARSE_FAILED 并且&lt;br&gt;appStatusCode ！=&amp;nbsp;CODE_APP_STATUS_RETRY_ONE （重试一次）&lt;br&gt;否则的话设置 appStatusCode = 0 不重试" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5474.75" y="2320" width="330.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-108" value="notifyInstallResult&lt;br&gt;传递 flag = &quot;notify&quot;&lt;br&gt;和一系列其他信息给 DownloaderService&lt;br&gt;&amp;nbsp;DownloaderService 中调用&amp;nbsp;&lt;font color=&quot;#ffbc21&quot;&gt;postInstall(见流程图详情)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5484.75" y="2484" width="310.5" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-115" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-98" target="FTWvnXMJPqgEjiOHBhAP-114">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="5300" y="2710" />
+              <mxPoint x="5640" y="2710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-112" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5640" y="2280" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-113" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5434.75" y="2177.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-114" target="FTWvnXMJPqgEjiOHBhAP-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-114" target="FTWvnXMJPqgEjiOHBhAP-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-114" value="剩余空间不足" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5510" y="2750" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-116" value="&lt;span&gt;notifyInstallResult&lt;/span&gt;&lt;br&gt;&lt;span&gt;传递 flag = &quot;notify&quot;&lt;br&gt;&lt;/span&gt;errorMsg =&amp;nbsp;SPACE_INSUFFICIENT_BEFORE_INSTALL&lt;br&gt;&lt;span&gt;和一系列其他信息给 DownloaderService&lt;br&gt;&lt;/span&gt;DownloaderService 中调用&amp;nbsp;&lt;font color=&quot;#ffbc21&quot;&gt;postInstall(见流程图详情)&lt;/font&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5860" y="2765" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-118" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5790" y="2780" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-120" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5620" y="3350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-121" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-116" target="FTWvnXMJPqgEjiOHBhAP-120">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5670" y="3060" as="sourcePoint" />
+            <mxPoint x="5720" y="3010" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="6015" y="3130" />
+              <mxPoint x="5740" y="3130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-122" value="通知桌面&lt;br&gt;onAppDownloadFinishing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5560" y="2900" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-124" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5640" y="2870" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-125" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-108" target="FTWvnXMJPqgEjiOHBhAP-120">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5670" y="2670" as="sourcePoint" />
+            <mxPoint x="5720" y="2620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="6220" y="2510" />
+              <mxPoint x="6220" y="3250" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
