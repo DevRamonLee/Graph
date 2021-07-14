@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-14T06:01:27.532Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="SgPRpaGr-F9T58skPg4t" version="14.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-14T06:07:20.619Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="a63Fu4sFpg7FDAf7Hnc7" version="14.8.5" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="4570" dy="327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="5044" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2334,6 +2334,12 @@
         </mxCell>
         <mxCell id="FTWvnXMJPqgEjiOHBhAP-55" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
           <mxGeometry x="2330" y="2990" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-56" value="2.14.7.4：start DownloaderService&amp;nbsp; flag = &quot;wake_up_tasks&quot;&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=block;exitX=-0.083;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FTWvnXMJPqgEjiOHBhAP-55">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1850" y="3050" as="sourcePoint" />
+            <mxPoint x="1405" y="3030" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
