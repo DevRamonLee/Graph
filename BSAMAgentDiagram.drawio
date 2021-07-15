@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-15T02:42:20.693Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="6yV001u4nnTvW-2s3QWz" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-15T05:46:26.726Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="tWkpPgCiFYX8AVnDRaRt" version="14.8.6" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="11680" dy="5080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="5755" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2721,6 +2721,202 @@
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="1660" y="2180" as="sourcePoint" />
             <mxPoint x="1215" y="2160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-36" target="Tgi_I-VzJUPoMkQMzmS_-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-36" value="postInstall" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6500" y="850" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-37" target="Tgi_I-VzJUPoMkQMzmS_-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-37" value="如果等待的线程的数量为 1&lt;br&gt;则调用 await()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6500" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-39" target="Tgi_I-VzJUPoMkQMzmS_-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-39" target="Tgi_I-VzJUPoMkQMzmS_-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-39" value="status ==&amp;nbsp;PackageInstaller.STATUS_SUCCESS" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6410" y="1090" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-40" target="Tgi_I-VzJUPoMkQMzmS_-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-40" target="Tgi_I-VzJUPoMkQMzmS_-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-40" value="status ==&amp;nbsp;PackageInstaller.PKG_NAME_CHECK_ERROR&lt;br&gt;或者&lt;br&gt;status ==&amp;nbsp;VERSION_CODE_VERIFY_FAILED" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6390" y="1220" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-43" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6560" y="1180" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-44" target="Tgi_I-VzJUPoMkQMzmS_-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-44" target="Tgi_I-VzJUPoMkQMzmS_-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-44" value="status ==&amp;nbsp;PackageInstaller.BACKGROUND_INSTALL_DISABLED" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6390" y="1380" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-46" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6560" y="1340" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-47" target="Tgi_I-VzJUPoMkQMzmS_-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-47" target="Tgi_I-VzJUPoMkQMzmS_-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-47" value="status ==&amp;nbsp;PackageInstaller.SPACE_INSUFFICIENT_BEFORE_INSTALL&lt;br&gt;或者&lt;br&gt;status == PackageInstaller.STATUS_FAILURE_STORAGE" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6390" y="1540" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-49" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6560" y="1502" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-50" target="Tgi_I-VzJUPoMkQMzmS_-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-50" target="Tgi_I-VzJUPoMkQMzmS_-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-50" value="expectedPkg == installedPkg" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6160" y="1090" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-52" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6370" y="1110" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-53" target="Tgi_I-VzJUPoMkQMzmS_-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-53" value="APPStatus.Updated(pkg, status)&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6135" y="1230" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-55" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6260" y="1190" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-56" target="Tgi_I-VzJUPoMkQMzmS_-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-56" value="at.waitWifi = 0&lt;br&gt;at.finished = System.currentTimeMilliions&lt;br&gt;at.callbackCode = CODE_CALLBACK_INSTALLED" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6132.5" y="1350" width="245" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-58" target="Tgi_I-VzJUPoMkQMzmS_-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-58" value="如果 subscribedAutoHandled == 0 代表预约上线任务为被处理，这里将其状态更新为1&lt;br&gt;subscribeHandled = true" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6130" y="1460" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-60" target="Tgi_I-VzJUPoMkQMzmS_-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-60" value="不是自更新，则回调&lt;br&gt;onTaskListStatusChanged(TaskStatus.Finished(at))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6130" y="1577" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-62" value="&lt;font color=&quot;#67ab9f&quot;&gt;将任务插入数据库，更新下载完成状态，避免进程被异常杀死，导致数据库状态未更新，产生重复下载&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6130" y="1700" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-64" value="at.finished = FLAG_NO_RETRY&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged(pkg, APPStatus.Updated(pkg, PackageInstaller.STATUS_FAILURE))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5820" y="1100" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-66" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6095" y="1110" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-67" value="at.callbackCode = CODE_CALLBACK_FAILED&lt;br&gt;通知桌面：onAppDownloadFail&lt;br&gt;at.finished = FLAG_NO_RETRY&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged(at.pkgName, appStatus)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6830" y="1230" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-69" value="at.callbackCode = CODE_CALLBACK_FAILED&lt;br&gt;通知桌面：onAppDownloadFail&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged(at.pkgName, APPStatus.Updated(at.pkgName, BACKGROUND_INSTALL_DISABLED))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6830" y="1390" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-71" value="at.finished = FLAG_NO_RETRY&lt;br&gt;at.callbackCode = CODE_CALLBACK_FAILED&lt;br&gt;通知桌面：onAppDownloadFail&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged(at.pkgName, APPStatus.Updated(pkg, status))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6830" y="1550" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-73" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6750" y="1250" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-74" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6750" y="1410" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-75" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6750" y="1565" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-76" target="Tgi_I-VzJUPoMkQMzmS_-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-76" value="&lt;div&gt;if (at.appStatusCode == CODE_APP_STATUS_RETRY_ONE) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; at.finished = -1&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else if (at.finished &amp;gt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; at.finished = FLAG_NO_RETRY&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; at.finished--&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6420" y="1700" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-78" target="Tgi_I-VzJUPoMkQMzmS_-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-78" value="at.callbackCode = CODE_CALLBACK_FAILED&lt;br&gt;通知桌面&amp;nbsp;onAppDownloadFail&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged(pkg,APPStatus.Updated(pkg, status)&lt;br&gt;status != TEMPORARY_FAIL_MARK（用于调起安装器安装，先返回一个失败标记，再根据receiver结果确认最终安装结果） &amp;amp;&amp;amp; status != FOREGROUND_UPDATE_DISABLE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6330" y="1870" width="460" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-80" target="Tgi_I-VzJUPoMkQMzmS_-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-80" value="如果满足；&lt;br&gt;status != PackageInstaller.STATUS_FAILURE_BLOCKED &amp;amp;&amp;amp; status != BACKGROUND_INSTALL_DISABLED &amp;amp;&amp;amp; status != TEMPORARY_FAIL_MARK&lt;br&gt;&amp;amp;&amp;amp; status != SPACE_INSUFFICIENT_BEFORE_INSTALL &amp;amp;&amp;amp; status != PackageInstaller.STATUS_FAILURE_STORAGE &amp;amp;&amp;amp; status != FOREGROUND_UPDATE_DISABLE&lt;br&gt;&lt;br&gt;删除下载的文件&lt;br&gt;OkDownload.with().breakpointStore().remove(taskId)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6330" y="2000" width="460" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-82" target="Tgi_I-VzJUPoMkQMzmS_-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-82" value="回调 processMonitor.onInstallFinish" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6420" y="2199" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-84" target="Tgi_I-VzJUPoMkQMzmS_-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-84" value="&lt;font color=&quot;#67ab9f&quot;&gt;收到安装任务完成的回调, 且当前没有处于安装中的任务时，再处理处于 WaitInstall 状态的 task&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6450" y="2290" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-86" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6500" y="2400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-88" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-62" target="Tgi_I-VzJUPoMkQMzmS_-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="6650" y="2320" as="sourcePoint" />
+            <mxPoint x="6700" y="2270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="6260" y="2440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-89" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-64" target="Tgi_I-VzJUPoMkQMzmS_-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="6480" y="2130" as="sourcePoint" />
+            <mxPoint x="6530" y="2080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="5940" y="2440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-90" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-67" target="Tgi_I-VzJUPoMkQMzmS_-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="7360" y="1720" as="sourcePoint" />
+            <mxPoint x="6530" y="1940" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="7280" y="1275" />
+              <mxPoint x="7290" y="2440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-91" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Tgi_I-VzJUPoMkQMzmS_-69">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="6480" y="1850" as="sourcePoint" />
+            <mxPoint x="7280" y="1435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-92" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="7190" y="1600" as="sourcePoint" />
+            <mxPoint x="7280" y="1600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
