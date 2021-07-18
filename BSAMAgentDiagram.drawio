@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-18T09:49:51.669Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="wy9pk1vNJJBDKcpWoEtE" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-18T10:38:19.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="G5GEpyJO_TdYpCSVj2OG" version="14.8.6" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="5044" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3873" dy="46" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -171,7 +171,7 @@
         <mxCell id="O9KLCyzz_sq7_ecukrvO-265" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" parent="O9KLCyzz_sq7_ecukrvO-303" source="O9KLCyzz_sq7_ecukrvO-258" target="O9KLCyzz_sq7_ecukrvO-263" edge="1">
           <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="O9KLCyzz_sq7_ecukrvO-264" value="retryDelay根据重试次数依次递增，&lt;br&gt;重试 15 次,&amp;nbsp;&lt;br&gt;-16 &amp;lt; finished &amp;lt;0" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;strokeColor=#d79b00;fillColor=#ffe6cc;position2=1;" parent="O9KLCyzz_sq7_ecukrvO-303" vertex="1">
+        <mxCell id="O9KLCyzz_sq7_ecukrvO-264" value="retryDelay根据重试次数依次递增，&lt;br&gt;重试 16 次,&amp;nbsp;&lt;br&gt;-16 &amp;lt; finished &amp;lt;=0" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;strokeColor=#d79b00;fillColor=#ffe6cc;position2=1;" parent="O9KLCyzz_sq7_ecukrvO-303" vertex="1">
           <mxGeometry y="890" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="O9KLCyzz_sq7_ecukrvO-266" value="启动重试任务scheduleWakeupJob" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;" parent="O9KLCyzz_sq7_ecukrvO-303" vertex="1">
@@ -414,7 +414,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="FTWvnXMJPqgEjiOHBhAP-98" value="如果 task 的 appStatusCode ==CODE_APP_STATUS_RETRY_ONE&lt;br&gt;则重置为 0，也就是不再重试&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
+        <mxCell id="FTWvnXMJPqgEjiOHBhAP-98" value="如果 task 的 appStatusCode ==CODE_APP_STATUS_RETRY_ONE&lt;br&gt;则重置为 0，也就是不再重试&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="6615" y="2171.5" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FTWvnXMJPqgEjiOHBhAP-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FTWvnXMJPqgEjiOHBhAP-100" target="FTWvnXMJPqgEjiOHBhAP-103" edge="1">
@@ -781,7 +781,7 @@
         <mxCell id="Tgi_I-VzJUPoMkQMzmS_-60" value="不是自更新，则回调&lt;br&gt;onTaskListStatusChanged(TaskStatus.Finished(at))" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="8205" y="1601" width="250" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-62" value="&lt;font color=&quot;#ff0000&quot;&gt;将任务插入数据库，更新下载完成状态，避免进程被异常杀死，导致数据库状态未更新，产生重复下载&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Tgi_I-VzJUPoMkQMzmS_-62" value="将任务插入数据库，更新下载完成状态，避免进程被异常杀死，导致数据库状态未更新，产生重复下载" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="8205" y="1724" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Tgi_I-VzJUPoMkQMzmS_-64" value="at.finished = FLAG_NO_RETRY&lt;br&gt;回调&amp;nbsp;onAppDownloadStatusChanged(pkg, APPStatus.Updated(pkg, PackageInstaller.STATUS_FAILURE))" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1657,7 +1657,7 @@
         <mxCell id="O9KLCyzz_sq7_ecukrvO-392" value="开始下载前剩余空间不足" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="5848" y="2915" width="165" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="O9KLCyzz_sq7_ecukrvO-393" value="&lt;font color=&quot;#67ab9f&quot;&gt;1.已经下载完了&lt;br&gt;2. 下载文件的大小大于 2250 * 10 Byte&lt;br&gt;3. 文件存在&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7EA6E0;" parent="1" vertex="1">
+        <mxCell id="O9KLCyzz_sq7_ecukrvO-393" value="1.已经下载完了&lt;br&gt;2. 下载文件的大小大于 2250 * 10 Byte&lt;br&gt;3. 文件存在" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7EA6E0;" parent="1" vertex="1">
           <mxGeometry x="5835.5" y="3059" width="190" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FTWvnXMJPqgEjiOHBhAP-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="O9KLCyzz_sq7_ecukrvO-392" target="O9KLCyzz_sq7_ecukrvO-393" edge="1">
@@ -1931,7 +1931,7 @@
         <mxCell id="iIebNyMHVDZUpTm2OWp4-26" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="iIebNyMHVDZUpTm2OWp4-55">
           <mxGeometry x="530" y="525" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="iIebNyMHVDZUpTm2OWp4-27" value="downloadManager.enqueue(request) 返回一个 taskId&lt;br&gt;&lt;font color=&quot;#67ab9f&quot;&gt;这里少调用了&amp;nbsp;onTaskListStatusChanged？&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="iIebNyMHVDZUpTm2OWp4-55">
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-27" value="downloadManager.enqueue(request) 返回一个 taskId" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="iIebNyMHVDZUpTm2OWp4-55">
           <mxGeometry y="672.4699999999998" width="320" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iIebNyMHVDZUpTm2OWp4-28" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="iIebNyMHVDZUpTm2OWp4-55" source="iIebNyMHVDZUpTm2OWp4-19" target="iIebNyMHVDZUpTm2OWp4-27">
@@ -2733,7 +2733,7 @@
         <mxCell id="iIebNyMHVDZUpTm2OWp4-293" value="&lt;span style=&quot;color: rgb(255 , 0 , 0) ; text-align: center&quot;&gt;1770015&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 0 , 0) ; text-align: center&quot;&gt;game_offLine_check_err&lt;/span&gt;&lt;br style=&quot;color: rgb(255 , 0 , 0) ; text-align: center&quot;&gt;&lt;span style=&quot;color: rgb(255 , 0 , 0) ; text-align: center&quot;&gt;&lt;br&gt;使用 1770024 打点，这里不属于下载失败&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;align=left;verticalAlign=top;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="4125" y="1214" width="200" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="iIebNyMHVDZUpTm2OWp4-294" value="&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;1770015&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;game_offLine_${status.data}&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(255 , 0 , 0) ; text-align: center&quot;&gt;使用 1770024 打点，这里不属于下载失败 ？ 是否需要合 14 成对出现？&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;align=left;verticalAlign=top;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-294" value="&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;1770015&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;game_offLine_${status.data}&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(255 , 0 , 0) ; text-align: center&quot;&gt;使用 1770024 打点，这里不属于下载失败&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;text-align: center&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;align=left;verticalAlign=top;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="4935" y="1290" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="O9KLCyzz_sq7_ecukrvO-304" value="&lt;font style=&quot;font-size: 20px&quot;&gt;startTaskList&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" vertex="1">
@@ -3436,7 +3436,7 @@
         <mxCell id="iIebNyMHVDZUpTm2OWp4-441" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-439" target="iIebNyMHVDZUpTm2OWp4-440">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iIebNyMHVDZUpTm2OWp4-439" value="SystemDownloader 回调" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-439" value="&lt;font style=&quot;font-size: 20px&quot;&gt;SystemDownloader 回调&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="4865" y="4362" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="iIebNyMHVDZUpTm2OWp4-455" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-440" target="iIebNyMHVDZUpTm2OWp4-448">
@@ -4343,6 +4343,12 @@
         </mxCell>
         <mxCell id="iIebNyMHVDZUpTm2OWp4-666" value="&lt;div&gt;App 下载过程中的状态&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. APPStatus.None(pkg)&amp;nbsp; &amp;nbsp;// 未安装&lt;/div&gt;&lt;div&gt;2.APPStatus.NeedUpdate(pkg)&lt;span&gt;	&lt;/span&gt;//&amp;nbsp; 需要更新&lt;/div&gt;&lt;div&gt;3.APPStatus.Updated(pkg, status)&amp;nbsp; &amp;nbsp;// status = 0&amp;nbsp; 已安装&lt;/div&gt;&lt;div&gt;4.APPStatus.Paused(val pkgName: String, val sofar: Long = 0, val total: Long = 0, var isFailure: Boolean = false,&amp;nbsp; var pauseReason: Int = 0)&amp;nbsp; // isFailure 下载失败， pauseReason 原因&lt;/div&gt;&lt;div&gt;5.APPStatus.Connecting(pkg)&lt;span&gt;	&lt;/span&gt;// 连接中&lt;/div&gt;&lt;div&gt;6.APPStatus.Downloading(pkg) &lt;span&gt;	&lt;/span&gt;// 下载中&lt;/div&gt;&lt;div&gt;7.APPStatus.Waiting(pkg) &lt;span&gt;	&lt;/span&gt;// 等待中&lt;/div&gt;&lt;div&gt;8.APPStatus.WaitingWiFi(pkg) &lt;span&gt;	&lt;/span&gt;// 等待 wifi&lt;/div&gt;&lt;div&gt;9.APPStatus.Installing(pkg) &lt;span&gt;	&lt;/span&gt;// 安装中&lt;/div&gt;&lt;div&gt;10.APPStatus.WaitingInstall &lt;span&gt;	&lt;/span&gt;// 等待安装（仅 SystemDownloader 用到）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;align=center;verticalAlign=middle;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="3885" y="1730" width="390" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-667" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6038" y="3074" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-668" value="&lt;font style=&quot;font-size: 16px&quot;&gt;后台实时上报接口&amp;nbsp;v3/game/download/report&lt;br&gt;&lt;br&gt;上报位置有四处：&lt;br&gt;1. ITaskListener: onTaskPaused 实时上报手动暂停或者手动删除&lt;br&gt;2. ITaskListener：onTaskComplete&amp;nbsp; 实时上报下载成功&lt;br&gt;3. ProcessMonitor: onPreDownload 实时上报开始下载&lt;br&gt;4. ProcessMonitor：onInstallFinish&amp;nbsp; 实时上报安装成功&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;下载和安装过程打点：&lt;br&gt;&lt;br&gt;1. 创建下载任务成功/创建下载任务失败&lt;br&gt;2. 启动下载： AgentApp 通过&amp;nbsp;OnStatusChangedListener 回调打点&lt;br&gt;3. 下载失败打点：ITaskListener&amp;nbsp; 回调：onTaskPaused 和 onTaskFailed&lt;br&gt;4. 下载成功打点：ITaskListener 回调：onTaskComplete&lt;br&gt;5. 启动安装打点：ProcessMonitor 回调：onInstallStart&lt;br&gt;6. 安装成功打点：ProcessMonitor 回调：onInstallFinish&lt;br&gt;7. 安装失败打点：ProcessMonitor 回调：onInstallFinish&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-2000" y="1411" width="960" height="376" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
