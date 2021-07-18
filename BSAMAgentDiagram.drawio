@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-18T08:40:02.374Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="QG629LnBLt9rbxJB17o2" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-18T09:30:14.689Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="1iPUjrf4_JRfgAXKspXu" version="14.8.6" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="6263" dy="1327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -3429,6 +3429,321 @@
             <mxPoint x="5850" y="5360" as="targetPoint" />
             <Array as="points">
               <mxPoint x="7190" y="5350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-441" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-439" target="iIebNyMHVDZUpTm2OWp4-440">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-439" value="SystemDownloader 回调" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3020" y="4372" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-455" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-440" target="iIebNyMHVDZUpTm2OWp4-448">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-440" value="DownloadChangeObserver 注册&amp;nbsp;content://downloads/my_downloads 监听变化" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2975" y="4500" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-459" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-442" target="iIebNyMHVDZUpTm2OWp4-458">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-442" value="onDownloadPending" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="4698" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-466" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-443" target="iIebNyMHVDZUpTm2OWp4-465">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-443" value="onDownloadRunning" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2555" y="4689" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-478" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-444" target="iIebNyMHVDZUpTm2OWp4-477">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-444" value="onDownloadPaused" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3020" y="4698" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-504" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-445" target="iIebNyMHVDZUpTm2OWp4-503">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-445" value="onDownloadSuccess" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3828" y="4691" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-452" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-446" target="iIebNyMHVDZUpTm2OWp4-442">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-446" value="DownloadManager.STATUS_PENDING" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2010" y="4590" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-462" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-447" target="iIebNyMHVDZUpTm2OWp4-443">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-447" value="DownloadManager.STATUS_RUNNING" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="4590" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-463" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-448" target="iIebNyMHVDZUpTm2OWp4-444">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-448" value="DownloadManager.STATUS_PAUSED" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2975" y="4590" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-464" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-449" target="iIebNyMHVDZUpTm2OWp4-445">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-449" value="DownloadManager.STATUS_SUCCESSFUL" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3758" y="4590" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-472" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-450" target="iIebNyMHVDZUpTm2OWp4-471">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-450" value="DownloadManager.STATUS_FAILED" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3340" y="4590" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-453" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.468;entryY=-0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-440" target="iIebNyMHVDZUpTm2OWp4-446">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2350" y="4790" as="sourcePoint" />
+            <mxPoint x="2400" y="4740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2113" y="4530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-454" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-440" target="iIebNyMHVDZUpTm2OWp4-447">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2350" y="4790" as="sourcePoint" />
+            <mxPoint x="2400" y="4740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2615" y="4530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-456" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-440" target="iIebNyMHVDZUpTm2OWp4-449">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2910" y="4840" as="sourcePoint" />
+            <mxPoint x="2960" y="4790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3888" y="4530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-457" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-440" target="iIebNyMHVDZUpTm2OWp4-450">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3270" y="4900" as="sourcePoint" />
+            <mxPoint x="3320" y="4850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3440" y="4530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-461" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-458" target="iIebNyMHVDZUpTm2OWp4-460">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-458" value="通知桌面&amp;nbsp;onAppDownloadPending(context, appTask)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="4811" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-460" value="onAppDownloadStatusChanged(pkg, APPStatus.Waiting(appTask.pkgName, sofar, total))" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1960" y="4920" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-468" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-465" target="iIebNyMHVDZUpTm2OWp4-467">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-465" value="获取正在下载任务" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2555" y="4801" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-470" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-467" target="iIebNyMHVDZUpTm2OWp4-469">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-467" value="偶现正在下载，但是数据库无记录，（HLAPP-3065）&lt;br&gt;&lt;font color=&quot;#ff00ff&quot; style=&quot;font-size: 20px&quot;&gt;processMonitor?.onCancelNotification()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="4901" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-469" value="&lt;font color=&quot;#0000cc&quot; style=&quot;font-size: 20px&quot;&gt;onTaskRunning&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2555" y="4995.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-476" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-471" target="iIebNyMHVDZUpTm2OWp4-475">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-471" value="appTask?.manualStop == 1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3320" y="4689" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-473" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-471" target="iIebNyMHVDZUpTm2OWp4-444">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3570" y="4870" as="sourcePoint" />
+            <mxPoint x="3620" y="4820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-474" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3230" y="4700" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-490" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-475" target="iIebNyMHVDZUpTm2OWp4-489">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-475" value="onDownloadFailed" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3380" y="4820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-480" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-477" target="iIebNyMHVDZUpTm2OWp4-479">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-477" value="获取正在下载任务" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3020" y="4808" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-482" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-479" target="iIebNyMHVDZUpTm2OWp4-481">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-479" value="偶现正在下载，但是数据库无记录，（HLAPP-3065）&lt;br&gt;&lt;font color=&quot;#ff00ff&quot; style=&quot;font-size: 20px&quot;&gt;processMonitor?.onCancelNotification()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2900" y="4911" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-484" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-481" target="iIebNyMHVDZUpTm2OWp4-483">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-481" value="如果两次暂停间隔小于 2s 则返回&lt;br&gt;系统下载器下载暂停时概率性回调多次而且间隔较长,导致数据重复上报" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2990" y="5011" width="180" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-486" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-483" target="iIebNyMHVDZUpTm2OWp4-485">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-483" value="appTask.manualStop != 1 &amp;amp;&amp;amp; reason == PAUSED_BY_APP（没有手动停止但reason是5的话，就认为是在系统下载管理界面暂停的）&lt;br&gt;appTask.manualStop = 1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2940" y="5140" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-488" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-485" target="iIebNyMHVDZUpTm2OWp4-487">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-485" value="appTask.manualStop != 1 &amp;amp;&amp;amp; reason != DownloadManager.PAUSED_WAITING_TO_RETRY&lt;br&gt;appTask.finished--" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2940" y="5250" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-494" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-487" target="iIebNyMHVDZUpTm2OWp4-493">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-487" value="处理不同暂停后的逻辑&lt;br&gt;1.&amp;nbsp;appTask.manualStop == 1 -&amp;gt;&amp;nbsp;notifyPaused&lt;br&gt;checkShouldStopSelf(&quot;download_pause&quot;)&lt;br&gt;2.&amp;nbsp;reason == DownloadManager.PAUSED_QUEUED_FOR_WIFI-&amp;gt;&lt;br&gt;DownloaderProxy.get().callbackNeedWiFi(appTask, sofar, total)&lt;br&gt;notifyPaused&lt;br&gt;checkShouldStopSelf(&quot;download_network_policy_exception&quot;)&lt;br&gt;3.&amp;nbsp;reason == PAUSE_INSUFFICIENT_SPACE -&amp;gt;&lt;br&gt;&lt;div&gt;appTask.callbackCode = DownloaderService.CODE_CALLBACK_OTHER&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; appTask.finished = DownloaderService.FLAG_NO_RETRY&lt;/div&gt;&lt;div&gt;notifyPaused&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkShouldStopSelf(&quot;insufficient_storage_space&quot;)&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. 其他 -&amp;gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;val result = when (reason) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DownloadManager.PAUSED_WAITING_FOR_NETWORK -&amp;gt; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; outAppStatus.isFailure = false&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (appTask.requireWiFi == 1 &amp;amp;&amp;amp; !NetworkUtils.isWifiConnected()) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (!NetworkUtils.getMobileDataEnabled()) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Log.i(TAG, &quot;PAUSED_WAITING_FOR_NETWORK: mobile data not connected&quot;)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; CauseConst.INSTALL_WIFI_DISCONNECTED&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Log.i(TAG, &quot;PAUSED_WAITING_FOR_NETWORK: wifi not connected&quot;)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; val waitingWiFiStatus = DownloaderProxy.get().callbackNeedWiFi(appTask, sofar, total)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; notifyPaused(appTask, FallenResult(CauseConst.INSTALL_WIFI_DISCONNECTED, sofar, total, waitingWiFiStatus, appTask.manualStop, false, &quot;need_wifi&quot;))&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DownloaderProxy.get().checkShouldStopSelf(&quot;download_network_policy_exception&quot;)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; CauseConst.INSTALL_SOCKET_EXCEPTION&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DownloadManager.PAUSED_WAITING_TO_RETRY -&amp;gt; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ButlerUtils.showForegroundToast(R.string.server_exception_download_failed)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; CauseConst.INSTALL_SOCKET_EXCEPTION&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; else -&amp;gt; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ButlerUtils.showForegroundToast(R.string.server_exception_download_failed)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; CauseConst.INSTALL_FAIL_OTHER&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; val msg = SystemDownloadUtils.getReadableReason(reason)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Log.i(TAG, &quot;pause by exception: result = $result&quot;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; notifyPaused(appTask, FallenResult(result, sofar, total, outAppStatus, appTask.manualStop, false, msg))&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DownloaderProxy.get().checkShouldStopSelf(&quot;download_error&quot;)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="5370" width="680" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-492" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-489" target="iIebNyMHVDZUpTm2OWp4-491">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-489" value="获取正在下载任务" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3380" y="4920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-496" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-491" target="iIebNyMHVDZUpTm2OWp4-495">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-491" value="偶现正在下载，但是数据库无记录，（HLAPP-3065）&lt;br&gt;&lt;font color=&quot;#ff00ff&quot; style=&quot;font-size: 20px&quot;&gt;processMonitor?.onCancelNotification()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3260" y="5021" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-493" value="&lt;font color=&quot;#0000cc&quot;&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;onTaskPaused&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2610" y="6110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-498" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-495" target="iIebNyMHVDZUpTm2OWp4-497">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-495" value="appTask.finished--" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3380" y="5120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-500" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-497" target="iIebNyMHVDZUpTm2OWp4-501">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-497" value="1. reason == DownloadManager.ERROR_INSUFFICIENT_SPACE -&amp;gt;&lt;br&gt;&lt;div&gt;appTask.callbackCode = DownloaderService.CODE_CALLBACK_OTHER&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; appTask.finished = DownloaderService.FLAG_NO_RETRY&lt;/div&gt;&lt;div&gt;notifyPaused&lt;/div&gt;&lt;div&gt;2.&amp;nbsp;&lt;span&gt;reason == DownloadManager.ERROR_HTTP_DATA_ERROR&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; || reason == DownloadManager.ERROR_UNHANDLED_HTTP_CODE&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; || reason == DownloadManager.ERROR_TOO_MANY_REDIRECTS&amp;nbsp; -&amp;gt;&lt;/div&gt;&lt;div&gt;appTask.callbackCode = DownloaderService.CODE_CALLBACK_OTHER&lt;br&gt;&lt;/div&gt;&lt;div&gt;notifyFailed(appTask, FallenResult(CauseConst.INSTALL_SOCKET_EXCEPTION, sofar, total, pausedStatus, errorMsg = msg))&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkShouldStopSelf(&quot;download_error&quot;)&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. 其他 -&amp;gt;&lt;/div&gt;&lt;div&gt;appTask.callbackCode = DownloaderService.CODE_CALLBACK_OTHER&lt;br&gt;&lt;/div&gt;&lt;div&gt;notifyFailed(appTask, FallenResult(CauseConst.INSTALL_FAIL_OTHER, sofar, total, pausedStatus, errorMsg = msg))&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkShouldStopSelf(&quot;download_error&quot;)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3100" y="5340" width="680" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-499" value="mSofarRecord.remove(appTask.pkgName)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3380" y="5720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-502" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-501" target="iIebNyMHVDZUpTm2OWp4-499">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-501" value="&lt;font color=&quot;#0000cc&quot; style=&quot;font-size: 20px&quot;&gt;onTaskFailed&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3380" y="5610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-506" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-503" target="iIebNyMHVDZUpTm2OWp4-505">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-503" value="获取正在下载任务" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3828" y="4808" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-508" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-505" target="iIebNyMHVDZUpTm2OWp4-507">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-505" value="偶现正在下载，但是数据库无记录，（HLAPP-3065）&lt;br&gt;&lt;font color=&quot;#ff00ff&quot; style=&quot;font-size: 20px&quot;&gt;processMonitor?.onCancelNotification()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3708" y="4920" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-510" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-507" target="iIebNyMHVDZUpTm2OWp4-509">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-507" value="系统下载器下载成功时概率性回调多次而且间隔较长,导致重复发起安装 HLAPP-2897" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3798" y="5021" width="180" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-512" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-509" target="iIebNyMHVDZUpTm2OWp4-511">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-509" value="下载文件小于&amp;nbsp;2250 * 10&lt;br&gt;&lt;div&gt;appTask.callbackCode = DownloaderService.CODE_CALLBACK_OTHER&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; appTask.manualStop = 1 //如果不设置暂停，会不停的被触发重试&lt;/div&gt;&lt;div&gt;notifyFailed&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkShouldStopSelf(&quot;download_error&quot;)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3698" y="5150" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-514" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-511" target="iIebNyMHVDZUpTm2OWp4-513">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-511" value="&lt;font color=&quot;#ff00ff&quot; style=&quot;font-size: 20px&quot;&gt;processMonitor?.onDownloadSuccess(at)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3863" y="5320" width="327" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-516" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-513" target="iIebNyMHVDZUpTm2OWp4-515">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-513" value="notifyCheckAndInstall" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3966.5" y="5430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-518" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-515" target="iIebNyMHVDZUpTm2OWp4-517">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-515" value="&lt;font color=&quot;#00ffff&quot; style=&quot;font-size: 20px&quot;&gt;triggerCheckingAndInstalling&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3966.5" y="5550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-520" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-517" target="iIebNyMHVDZUpTm2OWp4-519">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-517" value="&lt;font color=&quot;#0000cc&quot;&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;onTaskComplete&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3966.5" y="5670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-519" value="mSofarRecord.remove(appTask.pkgName)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3968" y="5790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-521" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#EA6B66;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3010" y="6240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-522" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-460" target="iIebNyMHVDZUpTm2OWp4-521">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3420" y="5270" as="sourcePoint" />
+            <mxPoint x="3470" y="5220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2120" y="6270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-523" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-469">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3420" y="5270" as="sourcePoint" />
+            <mxPoint x="2110" y="5026" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-524" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-493" target="iIebNyMHVDZUpTm2OWp4-521">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3390" y="5440" as="sourcePoint" />
+            <mxPoint x="3440" y="5390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2670" y="6280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-525" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-499" target="iIebNyMHVDZUpTm2OWp4-521">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3390" y="5440" as="sourcePoint" />
+            <mxPoint x="3440" y="5390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3440" y="6280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iIebNyMHVDZUpTm2OWp4-526" value="" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iIebNyMHVDZUpTm2OWp4-519">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3390" y="5440" as="sourcePoint" />
+            <mxPoint x="3120" y="6280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="4028" y="6270" />
             </Array>
           </mxGeometry>
         </mxCell>
